@@ -32,7 +32,7 @@ Hi there! I'm NatuLe
 ## Work and Writing
 
 - **Writing**:
-  - [Demo](https://github.com/NatuLe/demo)
+  - [Demo](https://natule.github.io/demo)
 
 - **Work**:
   - [back to top discord plugin](https://github.com/NatuLe/back-to-top-button-in-text-area-better-discord)
