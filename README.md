@@ -29,12 +29,12 @@ Hi there! I'm NatuLe
   - Enjoy playing video games.
 
 
-## Work and Writing
-- **Work**:
+## Work 
+
   - [back to top discord plugin](https://github.com/NatuLe/back-to-top-button-in-text-area-better-discord)
 
 
-- **Writing**:
+
   
 
 
