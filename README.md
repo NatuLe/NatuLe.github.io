@@ -11,7 +11,7 @@ Hi there! I'm NatuLe
   - Studying for PhD related to finance currently.
 
 - **Research Focus**:
-  - Topics related to probability theory,statistical mechanics andfinancial technology.
+  - Topics related to probability theory,statistical mechanics and financial technology.
 
 - **Technical Skills**:
   - Proficient in several programming languages and tools, including Python, Matlab, R, and LaTeX.
