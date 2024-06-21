@@ -28,11 +28,12 @@ Hi there! I'm NatuLe
 - **Hobbies**:
   - Enjoy playing video games.
 
-## Projects
 
-I am involved in various projects, particularly those that bridge the gap between mathematics and technology. Recently, I've been developing things related to discord.
+## Work and Writing
 
-Feel free to explore my repositories and see what I've been working on. I'm always open to collaboration and new ideas, so don't hesitate to reach out!
-## Work
--
--
+- **Writing**:
+  - [Demo](https://github.com/NatuLe/demo)
+
+- **Work**:
+  - [back to top discord plugin](https://github.com/NatuLe/back-to-top-button-in-text-area-better-discord)
+
