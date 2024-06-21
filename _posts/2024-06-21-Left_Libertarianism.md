@@ -3,6 +3,7 @@ layout: default
 title: "Left Libertarianism"
 date: 2024-06-21 
 categories: blogging
+permalink: /:year/:month/:day/:title.html
 ---
 Libertarianism is based on the natural right of self-ownership. However, I agree more with Christman's view, which differentiates the traditional Locke and Nozick style of ownership into self-control and income rights. Since income rights are constructed post facto in monetary form, they are not natural rights. Furthermore, the social nature of income rights places them outside the realm of self-control. Even if one disagrees with this, the traditional libertarian principle of initial acquisition in a state of nature is unverifiable. On the contrary, initial acquisition is not a one-time process; it is ongoing and often violates these principles. Therefore, libertarian distributive justice is not applicable. Under these conditions, pursuing an egalitarian form of self-ownership becomes possible.
 
