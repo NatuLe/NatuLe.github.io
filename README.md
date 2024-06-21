@@ -32,7 +32,7 @@ Hi there! I'm NatuLe
 ## Work and Writing
 
 - **Writing**:
-  - [Demo](https://natule.github.io/demo)
+  - [Left-Libertarianism](https://natule.github.io/Left-Libertarianism)
 
 - **Work**:
   - [back to top discord plugin](https://github.com/NatuLe/back-to-top-button-in-text-area-better-discord)
