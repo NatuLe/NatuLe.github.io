@@ -30,10 +30,11 @@ Hi there! I'm NatuLe
 
 
 ## Work and Writing
-
-- **Writing**:
-  - [Left-Libertarianism](/Left-Libertarianism)
-
 - **Work**:
   - [back to top discord plugin](https://github.com/NatuLe/back-to-top-button-in-text-area-better-discord)
+
+
+- **Writing**:
+  
+
 
