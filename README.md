@@ -1,6 +1,6 @@
 
 
-# Welcome to My GitHub!
+# Welcome to My Homepage!
 
 Hi there! I'm NatuLe
 
