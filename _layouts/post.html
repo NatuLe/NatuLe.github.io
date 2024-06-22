@@ -35,6 +35,11 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+          <nav id="table-of-contents">
+            <h2>Table of Contents</h2>
+            {{ content | toc }}
+          </nav>
+          
           {{ content }}
 
 
