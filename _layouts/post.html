@@ -34,6 +34,18 @@
 
     <div id="content-wrapper">
       <div class="inner clearfix">
+        <aside id="toc">
+          <h2>Table of Contents</h2>
+          <ul>
+            {% assign headings = content | scan:'<h([2-6])[^>]*>(.*?)</h[2-6]>' %}
+            {% for heading in headings %}
+              {% assign level = heading[0] | minus: 1 %}
+              {% assign title = heading[1] %}
+              {% assign id = title | slugify %}
+              <li class="toc-level-{{ level }}"><a href="#{{ id }}">{{ title }}</a></li>
+            {% endfor %}
+          </ul>
+        </aside>
         <section id="main-content">
           <nav id="table-of-contents">
             <h2>Table of Contents</h2>
