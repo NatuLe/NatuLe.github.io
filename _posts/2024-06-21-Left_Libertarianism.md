@@ -4,7 +4,7 @@ title: "Left Libertarianism"
 date: 2024-06-21 
 categories: blogging
 permalink: /:year/:month/:day/:title.html
-toc: true
+
 ---
 
 # Left Libertarianism

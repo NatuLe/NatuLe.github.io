@@ -4,7 +4,7 @@ title: "Hahnel - 2021 - Democratic Economic Planning Part 1"
 date: 2024-06-22 
 categories: blogging
 permalink: /:year/:month/:day/:title.html
-toc: true
+
 ---
 
 # Hahnel - 2021 - Democratic Economic Planning Part 1
