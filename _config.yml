@@ -7,3 +7,5 @@ baseurl: ""
 url: "https://NatuLe.github.io" # the base hostname & protocol for your site
 
 
+toc:
+  ordered_list: true
