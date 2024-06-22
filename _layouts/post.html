@@ -36,19 +36,9 @@
       <div class="inner clearfix">
         <aside id="toc">
           <h2>Table of Contents</h2>
-          <ul>
-            {% assign headings = content | split: '<h' %}
-            {% for heading in headings %}
-              {% if heading contains '</h2>' or heading contains '</h3>' or heading contains '</h4>' %}
-                {% capture heading_level %}{{ heading | slice: 0, 1 }}{% endcapture %}
-                {% capture heading_text %}{{ heading | split: '>' | last | split: '<' | first }}{% endcapture %}
-                {% assign heading_id = heading_text | slugify %}
-                <li class="toc-level-{{ heading_level }}">
-                  <a href="#{{ heading_id }}">{{ heading_text }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+          <nav>
+            {{ content | toc }}
+          </nav>
         </aside>
         <section id="main-content">
           
