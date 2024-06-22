@@ -36,9 +36,9 @@
       <div class="inner clearfix">
         <aside id="toc">
           <h2>Table of Contents</h2>
-          <nav>
-            {{ content | toc_only }}
-          </nav>
+          <div id="table-of-contents">
+            {% toc %}
+          </div>
         </aside>
         <section id="main-content">
           
