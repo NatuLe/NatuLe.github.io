@@ -113,7 +113,7 @@ $$
 3. **Resource Constraints**: The available natural resources each year must be sufficient for production:
 
 $$
-\sum_{p} \sum_{j} a_{rjp}(t)x_{jp}(t) \leq R_r(t)^* 
+\sum_{p} \sum_{j} a_{rjp}(t)x_{jp}(t) \leq R_r(t)^*
 $$
 
 4. **Capital Constraints**: The necessary capital stocks must be available at the beginning of each year for production:
