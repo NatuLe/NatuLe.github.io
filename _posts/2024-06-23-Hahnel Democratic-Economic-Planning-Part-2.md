@@ -128,7 +128,7 @@ If the objective function and constraints are linear, this is a linear programmi
 1. **Production Coefficients**: $ a_{ijp}(t), a_{ljp}(t), a_{rjp}(t), S_{sjp}(t) $
 2. **Investment Coefficients**: $ i_{isk}(t/t'), I_{isk} $
 3. **Depreciation Coefficients**: $ \delta S_s(t) $
-4. **Available Labor and Resources**:  {% raw %}$L_l(t)^*,R_r(t)^*$  {% endraw %}
+4. **Available Labor and Resources**:  **$L_l(t)^*$ **,**$R_r(t)^*$​  **
 5. **Initial Capital Stocks**: $ S_s(0) $
 6. **Utility of Consumption Goods**: $ v_i(t) $
 7. **Disutility of Labor**: $ w_l(t) $
