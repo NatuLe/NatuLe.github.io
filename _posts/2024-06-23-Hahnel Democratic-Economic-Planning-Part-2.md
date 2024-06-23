@@ -107,13 +107,13 @@ $$
 2. **Labor Constraints**: The available labor each year must be sufficient for production:
 
 $$
-\sum_{p} \sum_{j} a_{ljp}(t)x_{jp}(t) \leq L_l(t)^*
+\sum_{p} \sum_{j} a_{ljp}(t)x_{jp}(t) \leq L_l(t)^{\star}
 $$
 
 3. **Resource Constraints**: The available natural resources each year must be sufficient for production:
 
 $$
-\sum_{p} \sum_{j} a_{rjp}(t)x_{jp}(t) \leq R_r(t)^*
+\sum_{p} \sum_{j} a_{rjp}(t)x_{jp}(t) \leq R_r(t)^{\star}
 $$
 
 4. **Capital Constraints**: The necessary capital stocks must be available at the beginning of each year for production:
@@ -128,7 +128,7 @@ If the objective function and constraints are linear, this is a linear programmi
 1. **Production Coefficients**: $ a_{ijp}(t), a_{ljp}(t), a_{rjp}(t), S_{sjp}(t) $
 2. **Investment Coefficients**: $ i_{isk}(t/t'), I_{isk} $
 3. **Depreciation Coefficients**: $ \delta S_s(t) $
-4. **Available Labor and Resources**:  **$L_l(t)^*$ **,**$R_r(t)^*$​  **
+4. **Available Labor and Resources**:  $ L_l(t)^{\star}$ ,$R_r(t)^{\star}  $
 5. **Initial Capital Stocks**: $ S_s(0) $
 6. **Utility of Consumption Goods**: $ v_i(t) $
 7. **Disutility of Labor**: $ w_l(t) $
