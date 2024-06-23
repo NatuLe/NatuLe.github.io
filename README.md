@@ -11,13 +11,12 @@ Hi there! I'm NatuLe
   - Studying for PhD related to finance currently.
 
 - **Research Focus**:
-  - Topics related to probability theory,statistical mechanics and financial technology.
+  - Topics related to probability theory,statistics and financial technology.
 
 - **Technical Skills**:
   - Proficient in several programming languages and tools, including Python, Matlab, R, and LaTeX.
 
-- **Achievements**:
-  - Recipient of national awards in mathematical modeling contests.
+
 
 ## Interests
 
@@ -27,12 +26,6 @@ Hi there! I'm NatuLe
 
 - **Hobbies**:
   - Enjoy playing video games.
-
-
-## Work 
-
-  - [back to top discord plugin](https://github.com/NatuLe/back-to-top-button-in-text-area-better-discord)
-
 
 
   
