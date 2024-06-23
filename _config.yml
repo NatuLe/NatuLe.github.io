@@ -6,3 +6,12 @@ baseurl: ""
 url: "https://NatuLe.github.io" # the base hostname & protocol for your site
 
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+mathjax:
+  enable: true
