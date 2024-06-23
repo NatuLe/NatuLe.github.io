@@ -16,7 +16,7 @@ permalink: /:year/:month/:day/:title.html
 
 We begin by discussing central planning not to endorse it but for two reasons: (1) to introduce essential concepts for understanding comprehensive economic planning and (2) to highlight the pitfalls we must avoid. This chapter explains central planning's logic and feasibility, scrutinizing criticisms that deem efficient comprehensive planning impossible in theory and practice. The following chapter will provide a practical and substantive critique against central planning. Here, we outline an idealized version of central planning, while in Chapter 4, we discuss why central planning is best left in history.
 
-#### A Hypothetical One-Year Model
+### A Hypothetical One-Year Model
 
 Imagine an economy with no future beyond one year, with given stocks of capital goods, natural resources, and labor. Multiple techniques exist for producing each good. A central planning board (CPB) must decide the production levels using each technique. Let:
 
