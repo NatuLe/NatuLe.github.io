@@ -143,3 +143,65 @@ As with the single-year model, the solution to the dual problem in the multi-yea
 A known theoretical issue in planning literature is the valuation of terminal capital stocks at the end of the planning horizon. The objective function includes the term $\sum_{s} y_s(T) S_s(T)$, assuming the CPB knows the value society places on capital stocks at the end of year $ T $. Setting $ y_s(T) = 0 $ for all $ s $ leads to an intuitively unsatisfying reduction in investment as $ T $ approaches, known as the "truncation problem," because it neglects the well-being of future generations beyond $ T $.
 
 To balance the welfare of generations before and after $ T $, planners must choose positive values for $ y_s(T) $. An excellent explanation of the truncation problem and various solutions can be found in chapters 11 and 12 of Heal (1971). Heal endorses the "agreeable plan" proposed by Hammond and Mirrlees (1973) as the most theoretically satisfying way to address truncation problems. However, this discussion focuses on handling missing information during the planning horizon $ t = 2, 3, \ldots, T $, rather than post-$ T $ information.
+
+
+### Information Issues in Central Planning
+
+The initial criticism of central planning was that even if the central planning board (CPB) knew all of the “givens” mentioned earlier, it could never solve the programming problem for even a moderate-size real-world economy. This objection, initially raised by Enrico Barone, was valid early in the 20th century and led to the practical necessity of using the method of material balances, as discussed below, to arrive at plans in the early years of the Soviet Union. However, advances in mathematical programming theory and computer technology have rendered this original critique obsolete. Why the Soviet Union, and other countries that began to use central planning after WWII, did not take advantage of these advances is an interesting question we need not delve into here. However, there can be no doubt that as we enter the third decade of the 21st century, the original criticism of comprehensive socialist planning — namely, that due to the size of the programming problem, it is technologically impossible for a CPB to calculate an efficient, detailed, comprehensive plan for a modern economy — is no longer valid.
+
+The second criticism focuses on whether the CPB could ever discover all the “givens” it needs to solve the planning problem. Consider only the single-year model:
+
+1. **Capital, Resources, and Labor Supplies**: It should not be difficult for the CPB to determine the size of stocks of capital goods, natural resources, and labor supplies available at the beginning of the year — $k^*, r^*, \text{and } l^*$.
+2. **Value to Society of Different Goods**: How can the CPB know $v$?
+3. **Production Technologies**: How can the CPB discover $\{A, K, R, L\}$, which includes multiple techniques for producing each good?
+
+These “information problems” are at the center of the “tacit knowledge” critique of central planning.
+
+#### Finding the Social Welfare Function
+
+There are three ways the CPB might find $v$, the social values for the different final consumption goods:
+
+1. **Political Authority**: Some political authority could provide the CPB with $v$.
+2. **Retail Prices**: The CPB could use information from prices in retail outlets to find $v$.
+3. **Voting**: Citizens could vote for $v$.
+
+##### Political Authority
+
+The social values of different goods could be given to the CPB by an omniscient, vanguard revolutionary socialist leadership. The authoritarian implications of any such undemocratic political process for deciding $v$ are obvious. The tension between preference fulfillment and human development might suggest the desirability of combining political determination with market or voting procedures.
+
+##### Retail Prices
+
+Alternatively, the CPB could use prices from retail outlets to find $v$. Here’s a heuristic model for a single time period:
+
+1. The CPB solves the primal programming problem using an arbitrary initial vector of social values, $v'$.
+2. Producers deliver their net output, $y' = (I - A)x'$, to retail outlets.
+3. With whatever income they have, citizens purchase goods in these retail outlets.
+4. Managers of retail outlets adjust the price of every final good, $p(j)_m$, until demand equals supply.
+
+Since the initial $v'$ used by the CPB was arbitrary, there is no reason to expect the market clearing price in the retail outlets, $p(j)_m$, to be equal to the marginal social cost of producing good $j$, which was calculated using $v'$ as the vector of relative social values. Nonetheless, the CPB can calculate $p(j)_o = p(k)_o k(j) + p(r)_o r(j) + p(l)_o l(j) + p_o a(j)$ using $v'$ even though $p(j)_o$ is not “optimal.”
+
+5. If $p(j)_m > p(j)_o$, the CPB increases $v(j)'$. If $p(j)_m < p(j)_o$, the CPB decreases $v(j)'$.
+6. The CPB then replaces the initial, arbitrary vector of social values, $v'$, with a new vector $v'$ and solves the primal programming problem again using $v'$ instead of $v'$.
+7. Steps 1–6 are repeated until $p(j)_m = p(j)_o$ for all $j$.
+
+Eventually, $p(j)_m$ will equal $p(j)_o$ for all $j$, and we will have an optimal production plan, $x_o$, given consumers’ preferences and the distribution of income. In market economies, demand affects supply by influencing price in individual markets. In central planning, demand expressed in retail markets would influence supply via repeated recalculation of the entire economy's production plan, eventually using a $v'$ that yields $p_m = p_o$.
+
+Starting with last year’s prices from retail outlets as this year’s $v'$ would be a big improvement over starting with an arbitrary $v'$. But this explanation illustrates how it is possible, at least in theory, for a CPB to use information from retail outlets to determine relative social values they need for their objective function, at least for private goods.
+
+##### Voting
+
+Finally, a third way to determine $v$ is to give every citizen “points” to use to vote for different goods, where voters would assign more points to goods they like more. The CPB would then simply add up all the points people voted for each good to find $v$.
+
+It is worth pointing out two things:
+
+1. While using prices from retail outlets to find $v$ provides no solution for valuing public goods, voting faces no such obstacle. Voters could signal preferences for public goods by assigning them some of their points.
+2. If some citizens are given more points than others to use when voting, they would have a greater impact on $v$ and, therefore, a greater impact on what the economy produces than others.
+
+There are a host of problems that have been analyzed with voting mechanisms for social welfare functions. But for the sake of discussion, we assume:
+
+1. **Perfect Democracy**: Every member of society has the same number of points to vote.
+2. **Informed Voting**: Voting is based on the fullest possible discussion of the merits of different arguments in the social welfare function and complete knowledge of both the fulfillment and development effects of all goods by all voters.
+3. **Uncorrupted Voting**: Voting is not corrupted by “gamesmanship” or “coalition formation.”
+4. **Ignoring Complications**: We rule out complications such as the problem of “cyclical majorities” and the “paradox of voting.”
+
+Under these assumptions, we can imagine that $v$ might be found by allowing citizens to vote. While we may be less daunted than some by the literature detailing conceivable difficulties with majority voting, we do not deny these problems. For an excellent interpretation of this technical literature, see MacKay (1980). For now, we waive all such objections to focus on our primary concern: even at its best, voting for the planning objective function in central planning is not the same as economic self-management.
