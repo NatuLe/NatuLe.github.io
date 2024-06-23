@@ -16,7 +16,7 @@ permalink: /:year/:month/:day/:title.html
 
 We begin by discussing central planning not to endorse it but for two reasons: (1) to introduce essential concepts for understanding comprehensive economic planning and (2) to highlight the pitfalls we must avoid. This chapter explains central planning's logic and feasibility, scrutinizing criticisms that deem efficient comprehensive planning impossible in theory and practice. The following chapter will provide a practical and substantive critique against central planning. Here, we outline an idealized version of central planning, while in Chapter 4, we discuss why central planning is best left in history.
 
-### A Hypothetical One-Year Model
+#### A Hypothetical One-Year Model
 
 Imagine an economy with no future beyond one year, with given stocks of capital goods, natural resources, and labor. Multiple techniques exist for producing each good. A central planning board (CPB) must decide the production levels using each technique. Let:
 
@@ -66,7 +66,7 @@ $$
 p^o = (p(1)^o, p(2)^o, ..., p(j)^o, ..., p(n)^o)
 $$
 
-### A Multi-Good, Multi-Year Model
+#### A Multi-Good, Multi-Year Model
 
 While the one-year model helps illustrate the basics of central planning and the concepts of opportunity and social costs, real-world central planning spans multiple years. This section explores how a central planning board (CPB) might approach multi-year economic planning.
 
@@ -89,7 +89,7 @@ While the one-year model helps illustrate the basics of central planning and the
 17. **Disutility of Labor**: $ w_l(t) $ is the social disutility of working one hour of labor type $ l $ in year $ t $.
 18. **Value of Capital**: $ y_s(T) $ is the social value assigned to a unit of capital good $ s $ at the end of the final period $ T $.
 
-#### Optimization Problem
+##### Optimization Problem
 
 To determine the optimal production and investment plan, the CPB must solve the following programming problem:
 
@@ -138,14 +138,14 @@ If the objective function and constraints are linear, this is a linear programmi
 
 As with the single-year model, the solution to the dual problem in the multi-year model provides the opportunity costs for each type of labor, natural resource, and capital stock. These costs are used to calculate the social cost of producing each good in every year when the optimal plan is implemented, regardless of whether the good is for final consumption, intermediate use, or as a capital good.
 
-#### Addressing the Truncation Problem
+##### Addressing the Truncation Problem
 
 A known theoretical issue in planning literature is the valuation of terminal capital stocks at the end of the planning horizon. The objective function includes the term $\sum_{s} y_s(T) S_s(T)$, assuming the CPB knows the value society places on capital stocks at the end of year $ T $. Setting $ y_s(T) = 0 $ for all $ s $ leads to an intuitively unsatisfying reduction in investment as $ T $ approaches, known as the "truncation problem," because it neglects the well-being of future generations beyond $ T $.
 
 To balance the welfare of generations before and after $ T $, planners must choose positive values for $ y_s(T) $. An excellent explanation of the truncation problem and various solutions can be found in chapters 11 and 12 of Heal (1971). Heal endorses the "agreeable plan" proposed by Hammond and Mirrlees (1973) as the most theoretically satisfying way to address truncation problems. However, this discussion focuses on handling missing information during the planning horizon $ t = 2, 3, \ldots, T $, rather than post-$ T $ information.
 
 
-### Information Issues in Central Planning
+#### Information Issues in Central Planning
 
 The initial criticism of central planning was that even if the central planning board (CPB) knew all of the “givens” mentioned earlier, it could never solve the programming problem for even a moderate-size real-world economy. This objection, initially raised by Enrico Barone, was valid early in the 20th century and led to the practical necessity of using the method of material balances, as discussed below, to arrive at plans in the early years of the Soviet Union. However, advances in mathematical programming theory and computer technology have rendered this original critique obsolete. Why the Soviet Union, and other countries that began to use central planning after WWII, did not take advantage of these advances is an interesting question we need not delve into here. However, there can be no doubt that as we enter the third decade of the 21st century, the original criticism of comprehensive socialist planning — namely, that due to the size of the programming problem, it is technologically impossible for a CPB to calculate an efficient, detailed, comprehensive plan for a modern economy — is no longer valid.
 
@@ -206,7 +206,7 @@ There are a host of problems that have been analyzed with voting mechanisms for 
 
 Under these assumptions, we can imagine that $v$ might be found by allowing citizens to vote. While we may be less daunted than some by the literature detailing conceivable difficulties with majority voting, we do not deny these problems. For an excellent interpretation of this technical literature, see MacKay (1980). For now, we waive all such objections to focus on our primary concern: even at its best, voting for the planning objective function in central planning is not the same as economic self-management.
 
-### Responding to the Tacit Knowledge Critique
+#### Responding to the Tacit Knowledge Critique
 
 The second “information problem” for central planning concerns how the Central Planning Bureau (CPB) can discover all the different productive technologies available to different production units to produce their goods – {A, K, R, L} in our one-year model. This is the famous tacit knowledge critique of central planning initially expounded by Austrian economists Ludvig von Mises and Friedrich Hayek. This critique has been accepted as definitive by many economists, including those who support market socialism, because they believe the tacit knowledge critique of comprehensive planning is valid. According to this criticism, while it may be possible for a central planning authority to calculate an optimal plan if it knows {A, K, R, L} (which includes multiple different “activities” for producing each good), it is impossible in practice because only local personnel know the technological capabilities of their own production units. It is impossible for the CPB to obtain this vast quantity of “tacit knowledge” from production units.
 
@@ -214,7 +214,7 @@ Like the first criticism of central planning, which was valid at one point in ti
 
 We will investigate procedures for achieving this. We begin with the method of “material balances,” the most common way central planners gathered information in practice, although it is demonstrably inefficient. We will then consider various iterative procedures involving trial prices, trial quantities, and gradient searches that, in theory, can provide the information about different production technologies the CPB needs to calculate an efficient plan.
 
-#### Material Balances
+##### Material Balances
 
 Benjamin Ward explains the procedure of material balances: The planning bureau starts with a known bill of final demands for each sector. Its task is to find a bill of gross outputs for each sector that is consistent with this bill of final demands and with the production technology. The procedure is as follows:
 
@@ -229,7 +229,7 @@ Nonetheless, the method of material balances allows the CPB to come up with a pl
 
 Despite these shortcomings, the method of material balances remained the most common way of planning in centrally planned economies until the abandonment of central planning in the Soviet Union and Eastern Europe.
 
-#### Trial Prices
+##### Trial Prices
 
 Danzig and Wolfe (1961) were the first to propose an iterative procedure where the center proposes tentative resource prices, and the producing units develop corresponding profit-maximizing production programs (with prices treated parametrically). The center then revises its proposed prices in light of the production programs received. An optimal solution to the economic programming problem can be reached using this procedure, assuming no technological externalities, all constraints are linear, both at the single production unit level and the overall economy level, and the objective function and overall constraints are additively separable.
 
@@ -239,25 +239,25 @@ Malinvaud’s procedure requires the bureau to know the set X of acceptable fina
 
 The assumptions are that the individual production sets are closed, bounded, and convex; the set X is closed, convex, and bounded from below; the function u(x) is continuous and concave; and the planning bureau knows a feasible program to begin with. Under these conditions, Malinvaud’s procedure yields a feasible plan at every iteration, is well-defined, monotonic, and convergent. It ensures that solutions exist for the operations according to which the firms’ proposals, the prospective indices, and the plan can be determined, yielding a feasible program. The value of the social welfare function never lowers in any successive iteration and tends to the least upper bound of u(x) over the set of feasible programs as iterations increase indefinitely.
 
-#### Trial Quantities
+##### Trial Quantities
 
 Kornai and Liptak assume block angularity or subsets of constraints for each sector and resource constraints affecting the whole economy. In their procedure, the center proposes allotments of scarce resources to sectors, and each sector responds with shadow prices minimizing the value of the allotment subject to sectoral dual constraints. The center aims to maximize the contributions of the sectors to the objective function, maximizing the value of the allocated resources at the shadow prices received from the sectors, subject to available resource totals.
 
 Although Kornai and Liptak establish convergence with any desired accuracy by structuring the dialogue as a fictitious game, they cannot guarantee a solution in a finite number of steps. The procedure is not completely informationally decentralized since sectoral allotments must be large enough to assure feasible solutions for each sector.
 
-#### Mixed Price-Quantity Procedures
+##### Mixed Price-Quantity Procedures
 
 Mixed price-quantity procedures combine price and quantity guidance. Heal (1971) describes a procedure using mixed price and quantity guidance that locates a local maximum of the objective function even with increasing returns to scale, satisfying feasibility and monotonicity criteria. The essential informational feature is that certain functions of each producing unit’s marginal productivities must be conveyed to the center. This added flexibility allows the procedure to converge to an optimum even in the presence of increasing returns.
 
 Aoki’s procedure handles mixtures of private and public goods by using price-guidance for private goods and quantity-guidance for public goods. Producers develop production plans maximizing net revenue given central guidelines, and convey their demands for private goods and marginal evaluations for public goods to the center. The center adjusts the price of each private good according to the difference between its marginal utility and price and increases targets for public goods based on net aggregate marginal valuations.
 
-#### Gradient Procedures
+##### Gradient Procedures
 
 Gradient procedures involve price-guidance. Koopmans (1951) described an allocation game with a helmsman setting final goods prices, commodity custodians adjusting resource prices according to excess demand, and activity managers determining production programs. Managers expand profitable activities and curtail loss-making ones. Arrow and Hurwicz (1960) used gradient rules where the helmsman changes final demand rates equal to the difference between marginal utility and price, managers change process scales proportionate to marginal profitability, and custodians vary commodity prices according to excess demand.
 
 The strict concavity assumptions are critical for convergence to an optimum, and none of the intermediate plans are feasible. Uzawa (1958) constructed a discrete-time counterpart that overcame this feature.
 
-### Conclusion
 
-We have described various procedures by which a CPB might arrive at an optimal plan without initially knowing all the information needed for a perfect description of techniques. These procedures demonstrate that information problems might be overcome in theory, challenging the tacit knowledge critique of central planning. However, they raise a new problem: Are these procedures “incentive compatible,” or do they create perverse incentives for managers to report untruthfully? We will explore this practical question and a more fundamental problem with central planning in the next chapter – that even if planners gather all necessary information, they may not be able to use it to calculate an optimal plan efficiently.
+
+### Central planning Why not to do it
 
