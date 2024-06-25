@@ -43,20 +43,18 @@ where $\mod A$ means the class in $R/A$ containing $r$ (that is, $r + A$). This 
 
 Since $A + B = R$, there are elements $x \in A$ and $y \in B$ such that $x + y = 1$. This equation shows that $\psi(x) = (0, 1)$ and $\psi(y) = (1, 0)$ since, for example, $x$ is an element of $A$ and $x = 1 - y \in 1 + B$. If now $(r_1 \mod A, r_2 \mod B)$ is an arbitrary element in $R/A \times R/B$, then the element $r_2 x + r_1 y$ maps to this element since
 
-This shows 
+
 $$
 \begin{aligned} \psi(r_2 x + r_1 y) &= \psi(r_2) \psi(x) + \psi(r_1) \psi(y) \\&= (r_2 \mod A, r_2 \mod B)(0, 1) + (r_1 \mod A, r_1 \mod B)(1, 0) \\&= (0, r_2 \mod B) + (r_1 \mod A, 0) \\&= (r_1 \mod A, r_2 \mod B). 
 \end{aligned}
 $$
 
 
-that $\psi$ is indeed surjective. Finally, the ideal $AB$ is always contained in $A \cap B$. If $A$ and $B$ are comaximal and $x$ and $y$ are as above, then for any $c \in A \cap B$,
-$$ c = c \cdot 1 = c(x + y) = cx + cy \in AB. $$
-This establishes the reverse inclusion $A \cap B \subseteq AB$ and completes the proof when $k = 2$.
-
 This shows that $\psi$ is indeed surjective. Finally, the ideal $AB$ is always contained in $A \cap B$. If $A$ and $B$ are comaximal and $x$ and $y$ are as above, then for any $c \in A \cap B$,
 $$ c = c \cdot 1 = c(x + y) = cx + cy \in AB. $$
 This establishes the reverse inclusion $A \cap B \subseteq AB$ and completes the proof when $k = 2$.
+
+
 
 The general case follows easily by induction from the case of two ideals using $A = A_1$ and $B = A_2 \cdots A_k$ once we show that $A_1$ and $A_2 \cdots A_k$ are comaximal. By hypothesis, for each $i \in \{2, 3, \ldots, k\}$, there are elements $x_i \in A_1$ and $y_i \in A_i$ such that $x_i + y_i = 1$. Since $x_i + y_i = 1 \mod A_1$, it follows that $1 = (x_2 + y_2) \cdots (x_k + y_k)$ is an element in $A_1 + (A_2 \cdots A_k)$. This completes the proof.
 
