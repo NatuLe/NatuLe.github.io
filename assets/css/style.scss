@@ -1,15 +1,22 @@
 /* Import existing theme */
 @import "{{ site.theme }}";
 
+/* General layout styles */
+#content-wrapper {
+  display: flex;
+}
+
 /* TOC styles */
 #toc {
   position: fixed;
   top: 50px; /* Adjust as needed */
   left: 0;
   width: 200px;
+  height: 100%; /* Full height */
   padding: 20px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
+  background-color: #f9f9f9; /* Background color to differentiate it */
 }
 
 #toc ul {
@@ -24,8 +31,10 @@
 
 #toc a {
   text-decoration: none;
+  color: #333; /* Text color */
 }
 
 #toc a:hover {
   text-decoration: underline;
 }
+
