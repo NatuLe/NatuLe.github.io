@@ -5,14 +5,14 @@
 #toc {
     position: fixed;
     top: 50px; /* Adjust as needed */
-    left: 0;
+    left: -220px; /* Hidden state */
     width: 200px;
     padding: 20px;
     border-right: 1px solid #ddd;
     overflow-y: auto;
     overflow-x: auto; /* Enable horizontal scrolling */
     font-family: "Playwrite AU VIC", cursive;
-    transition: transform 0.3s ease;
+    transition: left 0.3s ease;
 }
 
 #toc ul {
@@ -35,7 +35,6 @@
 
 /* Toggle button styles */
 #toc-toggle {
-    display: none;
     position: fixed;
     top: 10px;
     left: 10px;
@@ -47,17 +46,14 @@
     cursor: pointer;
 }
 
+/* Active state for TOC */
+#toc.active {
+    left: 0;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     #toc {
-        transform: translateX(-100%);
-    }
-
-    #toc.active {
-        transform: translateX(0);
-    }
-
-    #toc-toggle {
-        display: block;
+        top: 10px;
     }
 }
