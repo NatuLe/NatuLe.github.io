@@ -107,6 +107,7 @@ const toc = document.getElementById('toc');
 tocToggle.addEventListener('click', function() {
   const isClosed = toc.style.transform === 'translateX(-100%)';
   toc.style.transform = isClosed ? 'translateX(0)' : 'translateX(-100%)';
+  toc.style.backgroundColor = isClosed ? 'white' : 'transparent';
   this.setAttribute('aria-expanded', !isClosed);
 });
 

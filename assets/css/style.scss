@@ -28,6 +28,7 @@
 #toc.closed {
   transform: translateX(-50px); /* Move the TOC to the left by 10px when collapsed */
   background: transparent;
+  overflow: hidden;
 }
 #toc-toggle {
   display: block;
