@@ -8,6 +8,8 @@ permalink: /:year/:month/:day/:title.html
 
 ---
 
+## Democratic Economic Planning Part 3: A Participatory Economy
+
 ### Social Ownership
 
 In a participatory economy, everything needed to produce our way of life belongs to everyone equally. Individuals may own personal belongings, but the means of production are collectively owned. This includes:
