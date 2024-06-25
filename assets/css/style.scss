@@ -51,7 +51,7 @@
   transition: transform 0.3s ease;
 }
 
-#toc-toggle[aria-expanded="false"] .arrow-icon {
+#toc-toggle[aria-expanded="true"] .arrow-icon {
   transform: rotate(180deg);
 }
 
