@@ -42,7 +42,16 @@ $$ \psi(r) = (r \mod A, r \mod B), $$
 where $\mod A$ means the class in $R/A$ containing $r$ (that is, $r + A$). This map is a ring homomorphism because $\psi$ is just the natural projection of $R$ into $R/A$ and $R/B$ for the two components. The kernel of $\psi$ consists of all the elements $r \in R$ that are in $A$ and in $B$, i.e., $A \cap B$. To complete the proof in this case, it remains to show that when $A$ and $B$ are comaximal, $\psi$ is surjective and $A \cap B = AB$.
 
 Since $A + B = R$, there are elements $x \in A$ and $y \in B$ such that $x + y = 1$. This equation shows that $\psi(x) = (0, 1)$ and $\psi(y) = (1, 0)$ since, for example, $x$ is an element of $A$ and $x = 1 - y \in 1 + B$. If now $(r_1 \mod A, r_2 \mod B)$ is an arbitrary element in $R/A \times R/B$, then the element $r_2 x + r_1 y$ maps to this element since
-$$ \psi(r_2 x + r_1 y) = \psi(r_2) \psi(x) + \psi(r_1) \psi(y) = (r_2 \mod A, r_2 \mod B)(0, 1) + (r_1 \mod A, r_1 \mod B)(1, 0) = (0, r_2 \mod B) + (r_1 \mod A, 0) = (r_1 \mod A, r_2 \mod B). $$
+
+This shows 
+$$
+\begin{aligned} \psi(r_2 x + r_1 y) &= \psi(r_2) \psi(x) + \psi(r_1) \psi(y) \\&= (r_2 \mod A, r_2 \mod B)(0, 1) + (r_1 \mod A, r_1 \mod B)(1, 0) \\&= (0, r_2 \mod B) + (r_1 \mod A, 0) \\&= (r_1 \mod A, r_2 \mod B). 
+\end{aligned}
+$$
+that $\psi$ is indeed surjective. Finally, the ideal $AB$ is always contained in $A \cap B$. If $A$ and $B$ are comaximal and $x$ and $y$ are as above, then for any $c \in A \cap B$,
+$$ c = c \cdot 1 = c(x + y) = cx + cy \in AB. $$
+This establishes the reverse inclusion $A \cap B \subseteq AB$ and completes the proof when $k = 2$.
+
 This shows that $\psi$ is indeed surjective. Finally, the ideal $AB$ is always contained in $A \cap B$. If $A$ and $B$ are comaximal and $x$ and $y$ are as above, then for any $c \in A \cap B$,
 $$ c = c \cdot 1 = c(x + y) = cx + cy \in AB. $$
 This establishes the reverse inclusion $A \cap B \subseteq AB$ and completes the proof when $k = 2$.
@@ -54,11 +63,10 @@ This theorem obtained its name from the special case $\mathbb{Z}/mn\mathbb{Z} \c
 Since the isomorphism in the Chinese Remainder Theorem is an isomorphism of rings, in particular, the groups of units on both sides must be isomorphic. It is easy to see that the units in any direct product of rings are the elements that have units in each of the coordinates. In the case of $\mathbb{Z}/mn\mathbb{Z}$, the Chinese Remainder Theorem gives the following isomorphism for the groups of units:
 $$ (\mathbb{Z}/mn\mathbb{Z})^\times \cong (\mathbb{Z}/m\mathbb{Z})^\times \times (\mathbb{Z}/n\mathbb{Z})^\times. $$
 We may iterate this to obtain a similar isomorphism for any finite collection of pairwise relatively prime integers. This isomorphism gives another derivation of Euler's formula for $\phi(n)$:
-$$ \phi(mn
+$$ \phi(mn) = \phi(m) \phi(n) $$
 
-) = \phi(m) \phi(n) $$
 when $m$ and $n$ are relatively prime. We shall prove in Section 8.2, directly from the definition of $\phi$, that
-$$ \phi(mn) = \phi(m)\phi(n) $$
+$$\phi(mn) = \phi(m)\phi(n)$$ 
 for any $m$ and $n$ and will use the multiplicativity of $\phi$ and the Chinese Remainder Theorem to deduce Euler's formula
 $$ \phi(n) = n \prod_{p \mid n} \left(1 - \frac{1}{p}\right) $$
 for any $n$.
