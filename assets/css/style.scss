@@ -14,14 +14,16 @@
 #toc {
   width: 200px;
   padding: 20px;
-  border-right: 1px solid #ddd;
+  border-right: transparent solid 1px;
   overflow-y: auto;
   background: transparent;
   z-index: 1000;
   transform: translateX(0);
   transition: transform 0.3s ease;
 }
-
+#toc.closed {
+  transform: translateX(-10px); /* Move the TOC to the left by 10px when collapsed */
+}
 #toc-toggle {
   display: block;
   background: transparent;
