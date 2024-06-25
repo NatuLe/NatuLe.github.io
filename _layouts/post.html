@@ -101,12 +101,15 @@
 
           <p><a href="{{ '/' | relative_url }}", class="button"><small>Back to</small>Homepage</a></p>
           <script>
-            const tocToggle = document.getElementById('toc-toggle');
-            tocToggle.addEventListener('click', function() {
-              var toc = document.getElementById('toc');
-              var isClosed = toc.classList.toggle('closed');
-              this.setAttribute('aria-expanded', isClosed ? 'false' : 'true');
-            });
+const tocToggle = document.getElementById('toc-toggle');
+const toc = document.getElementById('toc');
+
+tocToggle.addEventListener('click', function() {
+  const isClosed = toc.style.transform === 'translateX(-100%)';
+  toc.style.transform = isClosed ? 'translateX(0)' : 'translateX(-100%)';
+  this.setAttribute('aria-expanded', !isClosed);
+});
+
 
 
           </script>
