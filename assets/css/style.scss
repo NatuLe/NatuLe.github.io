@@ -55,4 +55,28 @@
   transform: rotate(180deg);
 }
 
-  
+
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1001;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+  display: none; /* Initially hidden */
+}
+
+#back-to-top i {
+  font-size: 16px;
+  color: #333;
+}
+
+#back-to-top.show {
+  display: block; /* Show button when scrolled down */
+}
