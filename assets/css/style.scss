@@ -43,11 +43,10 @@
 .arrow-icon {
   display: inline-block;
   vertical-align: middle;
-}
-
-.arrow-icon {
   transition: transform 0.3s ease;
 }
+
+
 
 #toc-toggle[aria-expanded="true"] .arrow-icon {
   transform: rotate(0deg);

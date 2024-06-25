@@ -103,7 +103,7 @@
             const tocToggle = document.getElementById('toc-toggle');
             const toc = document.getElementById('toc');
             
-            
+            tocToggle.setAttribute('aria-expanded', 'false');
             toc.style.transform = 'translateX(-100%)';
             
             tocToggle.addEventListener('click', function() {
