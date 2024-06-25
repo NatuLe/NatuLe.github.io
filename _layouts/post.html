@@ -105,31 +105,33 @@
             <i class="fas fa-arrow-up"></i>
           </button>
           <script>
-const tocToggle = document.getElementById('toc-toggle');
-const toc = document.getElementById('toc');
-const toc_container = document.getElementById('toc-container');
-tocToggle.addEventListener('click', function() {
-  const isClosed = toc.style.transform === 'translateX(-100%)';
-  toc.style.transform = isClosed ? 'translateX(0)' : 'translateX(-100%)';
-  toc.style.background = isClosed ? 'white' : 'transparent';
-  this.setAttribute('aria-expanded', !isClosed);
-});
-const backToTopButton = document.getElementById('back-to-top');
+            document.addEventListener('DOMContentLoaded', function() {
+              const tocToggle = document.getElementById('toc-toggle');
+              const toc = document.getElementById('toc');
+              toc.style.transform = 'translateX(-100%)';
+              tocToggle.addEventListener('click', function() {
+                const isClosed = toc.style.transform === 'translateX(-100%)';
+                toc.style.transform = isClosed ? 'translateX(0)' : 'translateX(-100%)';
+                toc.style.background = isClosed ? 'white' : 'transparent';
+                this.setAttribute('aria-expanded', !isClosed);
+              });
 
-window.addEventListener('scroll', function() {
-  if (window.scrollY > 200) {
-    backToTopButton.classList.add('show');
-  } else {
-    backToTopButton.classList.remove('show');
-  }
-});
+              const backToTopButton = document.getElementById('back-to-top');
+              window.addEventListener('scroll', function() {
+                if (window.scrollY > 200) {
+                  backToTopButton.classList.add('show');
+                } else {
+                  backToTopButton.classList.remove('show');
+                }
+              });
 
-backToTopButton.addEventListener('click', function() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
+              backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+                });
+              });
+            });
 
 
           </script>
