@@ -48,6 +48,8 @@ $$
 \begin{aligned} \psi(r_2 x + r_1 y) &= \psi(r_2) \psi(x) + \psi(r_1) \psi(y) \\&= (r_2 \mod A, r_2 \mod B)(0, 1) + (r_1 \mod A, r_1 \mod B)(1, 0) \\&= (0, r_2 \mod B) + (r_1 \mod A, 0) \\&= (r_1 \mod A, r_2 \mod B). 
 \end{aligned}
 $$
+
+
 that $\psi$ is indeed surjective. Finally, the ideal $AB$ is always contained in $A \cap B$. If $A$ and $B$ are comaximal and $x$ and $y$ are as above, then for any $c \in A \cap B$,
 $$ c = c \cdot 1 = c(x + y) = cx + cy \in AB. $$
 This establishes the reverse inclusion $A \cap B \subseteq AB$ and completes the proof when $k = 2$.
