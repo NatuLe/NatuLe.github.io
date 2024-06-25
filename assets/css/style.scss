@@ -1,8 +1,7 @@
----
----
-
+/* Import existing theme */
 @import "{{ site.theme }}";
 
+/* TOC styles */
 #toc {
     position: fixed;
     top: 50px; /* Adjust as needed */
@@ -11,26 +10,54 @@
     padding: 20px;
     border-right: 1px solid #ddd;
     overflow-y: auto;
-    
-    overflow-x: auto;  /* Enable horizontal scrolling */
-    font-family:"Playwrite AU VIC", cursive;
-  }
-  
-  #toc ul {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    font-family: "Playwrite AU VIC", cursive;
+    transition: transform 0.3s ease;
+}
+
+#toc ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
-  #toc ul ul {
+}
+
+#toc ul ul {
     margin-left: 20px;
-  }
-  
-  #toc a {
+}
+
+#toc a {
     text-decoration: none;
-  }
-  
-  #toc a:hover {
+}
+
+#toc a:hover {
     text-decoration: underline;
-  }
-  
+}
+
+/* Toggle button styles */
+#toc-toggle {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #toc {
+        transform: translateX(-100%);
+    }
+
+    #toc.active {
+        transform: translateX(0);
+    }
+
+    #toc-toggle {
+        display: block;
+    }
+}
