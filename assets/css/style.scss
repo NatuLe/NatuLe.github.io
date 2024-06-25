@@ -11,7 +11,7 @@
   padding: 20px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
-  background: #fff; /* Added background for better visibility */
+  background: transparent; /* Added background for better visibility */
   z-index: 1000; /* Ensure it stays above other content */
 }
 
