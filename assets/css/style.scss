@@ -24,15 +24,7 @@
   overflow-y: auto; /* Enable vertical scrolling */
 }
 
-#toc::-webkit-scrollbar {
-  display: none;
-}
 
-/* Show the scrollbar thumb when TOC is open */
-#toc::-webkit-scrollbar-thumb {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 #toc.closed {
   transform: translateX(-50px); /* Move the TOC to the left by 10px when collapsed */
 }
