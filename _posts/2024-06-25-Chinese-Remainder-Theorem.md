@@ -28,7 +28,7 @@ The ideals $A$ and $B$ of the ring $R$ are said to be comaximal if $A + B = R$.
 
 Recall that the product $AB$ of the ideals $A$ and $B$ of $R$ is the ideal consisting of all finite sums of elements of the form $xy$, $x \in A$ and $y \in B$. If $A = (a)$ and $B = (b)$, then $AB = (ab)$. More generally, the product of the ideals $A_1, A_2, \ldots, A_k$ is the ideal of all finite sums of elements of the form $x_1 x_2 \cdots x_k$ such that $x_i \in A_i$ for all $i$. If $A_i = (a_i)$, then $A_1 \cdots A_k = (a_1 \cdots a_k)$.
 
-**Theorem 17. (Chinese Remainder Theorem)**
+**Theorem . (Chinese Remainder Theorem)**
 Let $A_1, A_2, \ldots, A_k$ be ideals in $R$. The map
 $$ R \to R/A_1 \times R/A_2 \times \cdots \times R/A_k $$
 defined by
