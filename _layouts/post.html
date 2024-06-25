@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
@@ -50,12 +51,20 @@
 
     <div id="content-wrapper">
       <div class="inner clearfix">
-        <button id="toc-toggle">Toggle TOC</button>
+        <div id="toc-container">
+          <button id="toc-toggle" aria-label="Toggle Table of Contents" aria-expanded="false">
+            <span class="menu-icon"><i class="fas fa-bars"></i></span>
+            <span class="arrow-icon"><i class="fas fa-chevron-left"></i></span>
+          </button>
         <aside id="toc">
           <h2>Table of Contents</h2>
           {% include toc.html html=content h_max=4 %}
 
         </aside>
+
+
+        </div>
+        
         <section id="main-content">
           
           
@@ -94,11 +103,13 @@
 
           <p><a href="{{ '/' | relative_url }}", class="button"><small>Back to</small>Homepage</a></p>
           <script>
-            document.getElementById('toc-toggle').addEventListener('click', function() {
+            const tocToggle = document.getElementById('toc-toggle');
+            tocToggle.addEventListener('click', function() {
               var toc = document.getElementById('toc');
-              toc.classList.toggle('closed');
-              this.classList.toggle('open');
+              var isClosed = toc.classList.toggle('closed');
+              this.setAttribute('aria-expanded', isClosed ? 'false' : 'true');
             });
+
 
           </script>
         </aside>

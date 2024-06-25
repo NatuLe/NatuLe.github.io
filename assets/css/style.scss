@@ -3,67 +3,48 @@
 
 @import "{{ site.theme }}";
 
-#toc {
+#toc-container {
   position: fixed;
   top: 50px; /* Adjust as needed */
   left: 0;
+  display: flex;
+  transition: transform 0.3s ease; /* Added transition for smooth animation */
+}
+
+#toc {
   width: 200px;
   padding: 20px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
   background: #fff; /* Added background for better visibility */
   z-index: 1000; /* Ensure it stays above other content */
-  transition: transform 0.3s ease; /* Added transition for smooth animation */
 }
 
-#toc ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+#toc-toggle {
+  display: block;
+  background: #f4f4f4;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it stays above the TOC */
 }
 
-#toc ul ul {
-  margin-left: 20px;
+.menu-icon,
+.arrow-icon {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#toc a {
-  text-decoration: none;
+.menu-icon {
+  margin-right: 5px;
 }
 
-#toc a:hover {
-  text-decoration: underline;
+.arrow-icon {
+  transition: transform 0.3s ease;
 }
 
-/* Drawer menu closed state */
-#toc.closed {
-  transform: translateX(-100%);
+#toc-toggle[aria-expanded="true"] .arrow-icon {
+  transform: rotate(180deg);
 }
 
-@media (max-width: 768px) {
-  #toc {
-    position: fixed;
-    top: 50px; /* Adjust as needed */
-    height: calc(100% - 50px); /* Fill the height of the screen */
-    transition: transform 0.3s ease; /* Added transition for smooth animation */
-  }
-
-  #toc-toggle {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /* Same as the header height */
-    background: #f4f4f4;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-    cursor: pointer;
-    z-index: 1001; /* Ensure it stays above the TOC */
-  }
-
-  /* Hide the drawer menu toggle button when the TOC is open */
-  #toc-toggle.open {
-    display: none;
-  }
-}
+  
