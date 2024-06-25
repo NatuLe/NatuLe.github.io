@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hahnel - 2021 - Democratic Economic Planning Part 3 A participatory economy "
+title: "Hahnel - Democratic Economic Planning Part 3 A participatory economy "
 date: 2024-06-24 
 categories: blogging
 permalink: /:year/:month/:day/:title.html
