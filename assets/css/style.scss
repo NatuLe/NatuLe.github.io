@@ -8,7 +8,7 @@
   top: 50px; /* Adjust as needed */
   left: 0;
   display: flex;
-  transition: transform 0.3s ease; /* Added transition for smooth animation */
+  transition: transform 0.3s ease;
 }
 
 #toc {
@@ -16,8 +16,10 @@
   padding: 20px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
-  background: #fff; /* Added background for better visibility */
-  z-index: 1000; /* Ensure it stays above other content */
+  background: #fff;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
 #toc-toggle {
@@ -26,7 +28,7 @@
   padding: 10px;
   border: none;
   cursor: pointer;
-  z-index: 1001; /* Ensure it stays above the TOC */
+  z-index: 1001;
 }
 
 .menu-icon,
