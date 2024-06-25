@@ -11,6 +11,8 @@
     padding: 20px;
     border-right: 1px solid #ddd;
     overflow-y: auto;
+    
+    overflow-x: auto;  /* Enable horizontal scrolling */
     font-family:"Playwrite AU VIC", cursive;
   }
   
