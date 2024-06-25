@@ -11,8 +11,9 @@
   padding: 20px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
-  background: transparent; /* Added background for better visibility */
+  background: #fff; /* Added background for better visibility */
   z-index: 1000; /* Ensure it stays above other content */
+  transition: transform 0.3s ease; /* Added transition for smooth animation */
 }
 
 #toc ul {
@@ -33,33 +34,36 @@
   text-decoration: underline;
 }
 
+/* Drawer menu closed state */
+#toc.closed {
+  transform: translateX(-100%);
+}
+
 @media (max-width: 768px) {
   #toc {
-    position: static;
+    position: fixed;
+    top: 50px; /* Adjust as needed */
+    height: calc(100% - 50px); /* Fill the height of the screen */
+    transition: transform 0.3s ease; /* Added transition for smooth animation */
+  }
+
+  #toc-toggle {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
+    height: 50px; /* Same as the header height */
+    background: #f4f4f4;
     padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it stays above the TOC */
   }
 
-  #toc h2 {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  #toc {
+  /* Hide the drawer menu toggle button when the TOC is open */
+  #toc-toggle.open {
     display: none;
   }
-
-  /*#toc-toggle {
-    display: block ;
-    text-align: center;
-    background: transparent;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }*/
 }
-  
