@@ -108,12 +108,14 @@
             document.addEventListener('DOMContentLoaded', function() {
               const tocToggle = document.getElementById('toc-toggle');
               const toc = document.getElementById('toc');
+              const arrowIcon = document.querySelector('.arrow-icon i');
               toc.style.transform = 'translateX(-100%)';
               tocToggle.addEventListener('click', function() {
                 const isClosed = toc.style.transform === 'translateX(-100%)';
                 toc.style.transform = isClosed ? 'translateX(0)' : 'translateX(-100%)';
                 toc.style.background = isClosed ? 'white' : 'transparent';
                 this.setAttribute('aria-expanded', !isClosed);
+                arrowIcon.style.transform = isClosed ? 'rotate(0deg)' : 'rotate(180deg)';
               });
 
               const backToTopButton = document.getElementById('back-to-top');
