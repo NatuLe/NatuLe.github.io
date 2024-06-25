@@ -2,25 +2,7 @@
 @import "{{ site.theme }}";
 
 /* General layout styles */
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
-#content-wrapper {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px; /* Adjust as needed */
-}
-
-header {
-  width: 100%;
-  background-color: #f8f8f8;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 /* TOC styles */
 #toc {
@@ -55,24 +37,3 @@ header {
 }
 
 /* Main content styles */
-#main-area {
-  margin-left: 220px; /* Adjust this to the width of the TOC plus padding */
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-#main-content {
-  flex: 1;
-  margin-bottom: 20px;
-}
-
-/* Sidebar styles */
-#sidebar {
-  padding: 20px;
-  width: 300px; /* Adjust as needed */
-  background-color: #f1f1f1;
-  border-left: 1px solid #ddd;
-  margin-top: 20px; /* Align with the main content */
-}
