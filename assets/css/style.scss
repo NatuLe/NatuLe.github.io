@@ -3,57 +3,32 @@
 
 /* TOC styles */
 #toc {
-    position: fixed;
-    top: 50px; /* Adjust as needed */
-    left: -220px; /* Hidden state */
-    width: 200px;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    overflow-y: auto;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    
-    transition: left 0.3s ease;
+  position: fixed;
+  top: 50px; /* Adjust as needed */
+  left: 0;
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  
 }
 
 #toc ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 #toc ul ul {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #toc a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #toc a:hover {
-    text-decoration: underline;
-}
-
-/* Toggle button styles */
-#toc-toggle {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-    background: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-/* Active state for TOC */
-#toc.active {
-    left: 0;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    #toc {
-        top: 10px;
-    }
+  text-decoration: underline;
 }
