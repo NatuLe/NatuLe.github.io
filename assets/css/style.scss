@@ -4,31 +4,62 @@
 @import "{{ site.theme }}";
 
 #toc {
-    position: fixed;
-    top: 50px; /* Adjust as needed */
-    left: 0;
-    width: 200px;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    overflow-y: auto;
-    
+  position: fixed;
+  top: 50px; /* Adjust as needed */
+  left: 0;
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  background: #fff; /* Added background for better visibility */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+#toc ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#toc ul ul {
+  margin-left: 20px;
+}
+
+#toc a {
+  text-decoration: none;
+}
+
+#toc a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #toc {
+    position: static;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
   }
-  
-  #toc ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+  #toc h2 {
+    margin-top: 0;
   }
-  
-  #toc ul ul {
-    margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  #toc {
+    display: none;
   }
-  
-  #toc a {
-    text-decoration: none;
+
+  #toc-toggle {
+    display: block;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
   }
-  
-  #toc a:hover {
-    text-decoration: underline;
-  }
+}
   
